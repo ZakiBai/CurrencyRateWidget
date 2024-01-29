@@ -6,17 +6,45 @@
 //
 
 import SwiftUI
+import Combine
 
 struct ContentView: View {
+    @StateObject var viewModel = CurrencyViewModel()
+    @State var data: [CurrencyData] = []
+    
     var body: some View {
+        
         VStack {
             Image(systemName: "globe")
                 .imageScale(.large)
                 .foregroundColor(.accentColor)
-            Text("Hello, world!")
+            
+            List {
+                ForEach(data, id: \.id) { currencyData in
+                    VStack {
+                        Text(currencyData.ratePurchase)
+                        Text(currencyData.rateSale)
+                    }
+                }
+            }
+            
+            Text(data.first?.targetCurrencyIsoCode ?? "No iso code")
+                .onReceive(viewModel.$currencyData) { newData in
+                    self.data = newData
+                }
+            
+            Button("FetchData") {
+                print("Fetching")
+                viewModel.fetchData { currencyData in
+                    self.data = currencyData
+                }
+            }
         }
         .padding()
+        
     }
+        
+        
 }
 
 struct ContentView_Previews: PreviewProvider {

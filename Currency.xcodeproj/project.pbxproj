@@ -11,7 +11,51 @@
 		35676D672B495B48003BB33E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35676D662B495B48003BB33E /* ContentView.swift */; };
 		35676D692B495B49003BB33E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 35676D682B495B49003BB33E /* Assets.xcassets */; };
 		35676D6C2B495B49003BB33E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 35676D6B2B495B49003BB33E /* Preview Assets.xcassets */; };
+		35676D792B495B8A003BB33E /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35676D782B495B8A003BB33E /* WidgetKit.framework */; };
+		35676D7B2B495B8A003BB33E /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35676D7A2B495B8A003BB33E /* SwiftUI.framework */; };
+		35676D7E2B495B8A003BB33E /* CurrencyWidgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35676D7D2B495B8A003BB33E /* CurrencyWidgetBundle.swift */; };
+		35676D802B495B8A003BB33E /* CurrencyWidgetLiveActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35676D7F2B495B8A003BB33E /* CurrencyWidgetLiveActivity.swift */; };
+		35676D822B495B8A003BB33E /* CurrencyWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35676D812B495B8A003BB33E /* CurrencyWidget.swift */; };
+		35676D852B495B8D003BB33E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 35676D842B495B8D003BB33E /* Assets.xcassets */; };
+		35676D872B495B8D003BB33E /* CurrencyWidget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 35676D832B495B8A003BB33E /* CurrencyWidget.intentdefinition */; };
+		35676D882B495B8D003BB33E /* CurrencyWidget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 35676D832B495B8A003BB33E /* CurrencyWidget.intentdefinition */; };
+		35676D8B2B495B8D003BB33E /* CurrencyWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 35676D762B495B8A003BB33E /* CurrencyWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		35676D912B4D091B003BB33E /* TimelineProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35676D902B4D091B003BB33E /* TimelineProvider.swift */; };
+		35676D932B4D0969003BB33E /* TimelineEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35676D922B4D0969003BB33E /* TimelineEntry.swift */; };
+		35676D952B4D09A3003BB33E /* CurrencyWidgetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35676D942B4D09A3003BB33E /* CurrencyWidgetView.swift */; };
+		35676D972B4D0B86003BB33E /* CurrencyService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35676D962B4D0B86003BB33E /* CurrencyService.swift */; };
+		35676D982B4D0B86003BB33E /* CurrencyService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35676D962B4D0B86003BB33E /* CurrencyService.swift */; };
+		35676D9A2B4D0BB5003BB33E /* CurrencyData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35676D992B4D0BB5003BB33E /* CurrencyData.swift */; };
+		35676D9B2B4D0BB5003BB33E /* CurrencyData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35676D992B4D0BB5003BB33E /* CurrencyData.swift */; };
+		35676D9D2B4D14FD003BB33E /* CurrencyViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35676D9C2B4D14FD003BB33E /* CurrencyViewModel.swift */; };
+		35676D9E2B4D14FD003BB33E /* CurrencyViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35676D9C2B4D14FD003BB33E /* CurrencyViewModel.swift */; };
+		35676DA32B4D6124003BB33E /* MediumWidgetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35676DA22B4D6124003BB33E /* MediumWidgetView.swift */; };
+		35676DA72B4D6A87003BB33E /* SmallWidgetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35676DA62B4D6A87003BB33E /* SmallWidgetView.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		35676D892B495B8D003BB33E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 35676D592B495B48003BB33E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 35676D752B495B8A003BB33E;
+			remoteInfo = CurrencyWidgetExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		35676D8F2B495B8D003BB33E /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				35676D8B2B495B8D003BB33E /* CurrencyWidgetExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		35676D612B495B48003BB33E /* Currency.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Currency.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -19,6 +63,23 @@
 		35676D662B495B48003BB33E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		35676D682B495B49003BB33E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		35676D6B2B495B49003BB33E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		35676D762B495B8A003BB33E /* CurrencyWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = CurrencyWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		35676D782B495B8A003BB33E /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		35676D7A2B495B8A003BB33E /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		35676D7D2B495B8A003BB33E /* CurrencyWidgetBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyWidgetBundle.swift; sourceTree = "<group>"; };
+		35676D7F2B495B8A003BB33E /* CurrencyWidgetLiveActivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyWidgetLiveActivity.swift; sourceTree = "<group>"; };
+		35676D812B495B8A003BB33E /* CurrencyWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyWidget.swift; sourceTree = "<group>"; };
+		35676D832B495B8A003BB33E /* CurrencyWidget.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = CurrencyWidget.intentdefinition; sourceTree = "<group>"; };
+		35676D842B495B8D003BB33E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		35676D862B495B8D003BB33E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		35676D902B4D091B003BB33E /* TimelineProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelineProvider.swift; sourceTree = "<group>"; };
+		35676D922B4D0969003BB33E /* TimelineEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelineEntry.swift; sourceTree = "<group>"; };
+		35676D942B4D09A3003BB33E /* CurrencyWidgetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyWidgetView.swift; sourceTree = "<group>"; };
+		35676D962B4D0B86003BB33E /* CurrencyService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyService.swift; sourceTree = "<group>"; };
+		35676D992B4D0BB5003BB33E /* CurrencyData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyData.swift; sourceTree = "<group>"; };
+		35676D9C2B4D14FD003BB33E /* CurrencyViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyViewModel.swift; sourceTree = "<group>"; };
+		35676DA22B4D6124003BB33E /* MediumWidgetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediumWidgetView.swift; sourceTree = "<group>"; };
+		35676DA62B4D6A87003BB33E /* SmallWidgetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmallWidgetView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +90,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		35676D732B495B8A003BB33E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				35676D7B2B495B8A003BB33E /* SwiftUI.framework in Frameworks */,
+				35676D792B495B8A003BB33E /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -36,6 +106,8 @@
 			isa = PBXGroup;
 			children = (
 				35676D632B495B48003BB33E /* Currency */,
+				35676D7C2B495B8A003BB33E /* CurrencyWidget */,
+				35676D772B495B8A003BB33E /* Frameworks */,
 				35676D622B495B48003BB33E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -44,6 +116,7 @@
 			isa = PBXGroup;
 			children = (
 				35676D612B495B48003BB33E /* Currency.app */,
+				35676D762B495B8A003BB33E /* CurrencyWidgetExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -55,6 +128,7 @@
 				35676D662B495B48003BB33E /* ContentView.swift */,
 				35676D682B495B49003BB33E /* Assets.xcassets */,
 				35676D6A2B495B49003BB33E /* Preview Content */,
+				35676D9C2B4D14FD003BB33E /* CurrencyViewModel.swift */,
 			);
 			path = Currency;
 			sourceTree = "<group>";
@@ -67,6 +141,59 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		35676D772B495B8A003BB33E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				35676D782B495B8A003BB33E /* WidgetKit.framework */,
+				35676D7A2B495B8A003BB33E /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		35676D7C2B495B8A003BB33E /* CurrencyWidget */ = {
+			isa = PBXGroup;
+			children = (
+				35676D7D2B495B8A003BB33E /* CurrencyWidgetBundle.swift */,
+				35676D7F2B495B8A003BB33E /* CurrencyWidgetLiveActivity.swift */,
+				35676DA02B4D5BC1003BB33E /* Network */,
+				35676DA12B4D5BC8003BB33E /* Model */,
+				35676D9F2B4D5B8A003BB33E /* SystemSmall */,
+				35676D832B495B8A003BB33E /* CurrencyWidget.intentdefinition */,
+				35676D842B495B8D003BB33E /* Assets.xcassets */,
+				35676D862B495B8D003BB33E /* Info.plist */,
+				35676DA22B4D6124003BB33E /* MediumWidgetView.swift */,
+				35676DA62B4D6A87003BB33E /* SmallWidgetView.swift */,
+			);
+			path = CurrencyWidget;
+			sourceTree = "<group>";
+		};
+		35676D9F2B4D5B8A003BB33E /* SystemSmall */ = {
+			isa = PBXGroup;
+			children = (
+				35676D812B495B8A003BB33E /* CurrencyWidget.swift */,
+				35676D902B4D091B003BB33E /* TimelineProvider.swift */,
+				35676D922B4D0969003BB33E /* TimelineEntry.swift */,
+				35676D942B4D09A3003BB33E /* CurrencyWidgetView.swift */,
+			);
+			path = SystemSmall;
+			sourceTree = "<group>";
+		};
+		35676DA02B4D5BC1003BB33E /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				35676D962B4D0B86003BB33E /* CurrencyService.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		35676DA12B4D5BC8003BB33E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				35676D992B4D0BB5003BB33E /* CurrencyData.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -77,15 +204,34 @@
 				35676D5D2B495B48003BB33E /* Sources */,
 				35676D5E2B495B48003BB33E /* Frameworks */,
 				35676D5F2B495B48003BB33E /* Resources */,
+				35676D8F2B495B8D003BB33E /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				35676D8A2B495B8D003BB33E /* PBXTargetDependency */,
 			);
 			name = Currency;
 			productName = Currency;
 			productReference = 35676D612B495B48003BB33E /* Currency.app */;
 			productType = "com.apple.product-type.application";
+		};
+		35676D752B495B8A003BB33E /* CurrencyWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 35676D8C2B495B8D003BB33E /* Build configuration list for PBXNativeTarget "CurrencyWidgetExtension" */;
+			buildPhases = (
+				35676D722B495B8A003BB33E /* Sources */,
+				35676D732B495B8A003BB33E /* Frameworks */,
+				35676D742B495B8A003BB33E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CurrencyWidgetExtension;
+			productName = CurrencyWidgetExtension;
+			productReference = 35676D762B495B8A003BB33E /* CurrencyWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -98,6 +244,9 @@
 				LastUpgradeCheck = 1420;
 				TargetAttributes = {
 					35676D602B495B48003BB33E = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					35676D752B495B8A003BB33E = {
 						CreatedOnToolsVersion = 14.2;
 					};
 				};
@@ -116,6 +265,7 @@
 			projectRoot = "";
 			targets = (
 				35676D602B495B48003BB33E /* Currency */,
+				35676D752B495B8A003BB33E /* CurrencyWidgetExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -130,6 +280,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		35676D742B495B8A003BB33E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				35676D852B495B8D003BB33E /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -137,12 +295,43 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				35676D972B4D0B86003BB33E /* CurrencyService.swift in Sources */,
+				35676D9D2B4D14FD003BB33E /* CurrencyViewModel.swift in Sources */,
 				35676D672B495B48003BB33E /* ContentView.swift in Sources */,
+				35676D882B495B8D003BB33E /* CurrencyWidget.intentdefinition in Sources */,
+				35676D9A2B4D0BB5003BB33E /* CurrencyData.swift in Sources */,
 				35676D652B495B48003BB33E /* CurrencyApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		35676D722B495B8A003BB33E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				35676D9B2B4D0BB5003BB33E /* CurrencyData.swift in Sources */,
+				35676D9E2B4D14FD003BB33E /* CurrencyViewModel.swift in Sources */,
+				35676D802B495B8A003BB33E /* CurrencyWidgetLiveActivity.swift in Sources */,
+				35676D7E2B495B8A003BB33E /* CurrencyWidgetBundle.swift in Sources */,
+				35676DA72B4D6A87003BB33E /* SmallWidgetView.swift in Sources */,
+				35676D952B4D09A3003BB33E /* CurrencyWidgetView.swift in Sources */,
+				35676D822B495B8A003BB33E /* CurrencyWidget.swift in Sources */,
+				35676D982B4D0B86003BB33E /* CurrencyService.swift in Sources */,
+				35676DA32B4D6124003BB33E /* MediumWidgetView.swift in Sources */,
+				35676D932B4D0969003BB33E /* TimelineEntry.swift in Sources */,
+				35676D872B495B8D003BB33E /* CurrencyWidget.intentdefinition in Sources */,
+				35676D912B4D091B003BB33E /* TimelineProvider.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		35676D8A2B495B8D003BB33E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 35676D752B495B8A003BB33E /* CurrencyWidgetExtension */;
+			targetProxy = 35676D892B495B8D003BB33E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		35676D6D2B495B49003BB33E /* Debug */ = {
@@ -262,6 +451,7 @@
 		35676D702B495B49003BB33E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -291,6 +481,7 @@
 		35676D712B495B49003BB33E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -317,6 +508,60 @@
 			};
 			name = Release;
 		};
+		35676D8D2B495B8D003BB33E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = XZW4VA4NWF;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CurrencyWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = CurrencyWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = kz.menzhanovTeam.Currency.CurrencyWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		35676D8E2B495B8D003BB33E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = XZW4VA4NWF;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CurrencyWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = CurrencyWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = kz.menzhanovTeam.Currency.CurrencyWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -334,6 +579,15 @@
 			buildConfigurations = (
 				35676D702B495B49003BB33E /* Debug */,
 				35676D712B495B49003BB33E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		35676D8C2B495B8D003BB33E /* Build configuration list for PBXNativeTarget "CurrencyWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				35676D8D2B495B8D003BB33E /* Debug */,
+				35676D8E2B495B8D003BB33E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

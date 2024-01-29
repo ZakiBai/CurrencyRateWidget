@@ -18,13 +18,30 @@ struct CurrencyWidget: Widget {
         }
         .configurationDisplayName("Currency")
         .description("Track currency exchange rates in real time")
-        .supportedFamilies([.systemSmall])
+        .supportedFamilies([.systemSmall, .systemMedium])
+        .contentMarginsDisabledIfAvailable()
+        .containerBackgroundRemovable(true)
+        
     }
 }
 
+@available(iOSApplicationExtension 17.0, *)
 struct CurrencyWidget_Previews: PreviewProvider {
     static var previews: some View {
-        CurrencyWidgetEntryView(entry: SimpleEntry(date: Date(), configuration: ConfigurationIntent(), currencyData: nil))
-            .previewContext(WidgetPreviewContext(family: .systemSmall))
+        Group {
+            CurrencyWidgetEntryView(entry: SimpleEntry(date: Date(), configuration: ConfigurationIntent(), currencyData: nil))
+                .previewContext(WidgetPreviewContext(family: .systemSmall))
+                .containerBackground(for: .widget) {
+                    Color.black
+                }
+                
+            
+            CurrencyWidgetEntryView(entry: SimpleEntry(date: Date(), configuration: ConfigurationIntent(), currencyData: nil))
+                .previewContext(WidgetPreviewContext(family: .systemMedium))
+                .containerBackground(for: .widget) {
+                    Color.black
+                }
+                
+        }
     }
 }
