@@ -80,6 +80,7 @@
 		35676D9C2B4D14FD003BB33E /* CurrencyViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyViewModel.swift; sourceTree = "<group>"; };
 		35676DA22B4D6124003BB33E /* MediumWidgetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediumWidgetView.swift; sourceTree = "<group>"; };
 		35676DA62B4D6A87003BB33E /* SmallWidgetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmallWidgetView.swift; sourceTree = "<group>"; };
+		35E07A2E2B67C25F00A79EC2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +125,7 @@
 		35676D632B495B48003BB33E /* Currency */ = {
 			isa = PBXGroup;
 			children = (
+				35E07A2E2B67C25F00A79EC2 /* Info.plist */,
 				35676D642B495B48003BB33E /* CurrencyApp.swift */,
 				35676D662B495B48003BB33E /* ContentView.swift */,
 				35676D682B495B49003BB33E /* Assets.xcassets */,
@@ -460,6 +462,7 @@
 				DEVELOPMENT_TEAM = XZW4VA4NWF;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Currency/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -490,6 +493,7 @@
 				DEVELOPMENT_TEAM = XZW4VA4NWF;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Currency/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

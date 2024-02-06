@@ -22,6 +22,8 @@ struct CurrencyWidget: Widget {
         .contentMarginsDisabledIfAvailable()
         .containerBackgroundRemovable(true)
         
+    
+        
     }
 }
 
@@ -29,19 +31,19 @@ struct CurrencyWidget: Widget {
 struct CurrencyWidget_Previews: PreviewProvider {
     static var previews: some View {
         Group {
-            CurrencyWidgetEntryView(entry: SimpleEntry(date: Date(), configuration: ConfigurationIntent(), currencyData: nil))
-                .previewContext(WidgetPreviewContext(family: .systemSmall))
-                .containerBackground(for: .widget) {
-                    Color.black
-                }
-                
-            
-            CurrencyWidgetEntryView(entry: SimpleEntry(date: Date(), configuration: ConfigurationIntent(), currencyData: nil))
-                .previewContext(WidgetPreviewContext(family: .systemMedium))
-                .containerBackground(for: .widget) {
-                    Color.black
-                }
-                
+//            CurrencyWidgetEntryView(entry: SimpleEntry(date: Date(), showUSD: true, showGBP: true, showEUR: true, configuration: ConfigurationIntent(), currencyData: nil))
+//                .previewContext(WidgetPreviewContext(family: .systemSmall))
+//                .containerBackground(for: .widget) {
+//                    Color.black
+//                }
+//
+//            
+//            CurrencyWidgetEntryView(entry: SimpleEntry(date: Date(), configuration: ConfigurationIntent(), currencyData: nil))
+//                .previewContext(WidgetPreviewContext(family: .systemMedium))
+//                .containerBackground(for: .widget) {
+//                    Color.black
+//                }
+//                
         }
     }
 }

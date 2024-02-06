@@ -8,15 +8,27 @@
 import SwiftUI
 import WidgetKit
 
-struct CurrencyWidgetEntryView : View {
+struct CurrencyWidgetEntryView: View {
     @Environment(\.widgetFamily) var family
     var entry: SimpleEntry
 
     var body: some View {
+        let currencyData = entry.currencyData
         switch family {
         case .systemSmall:
-            SmallWidgetView(entry: entry)
-                .widgetBackground(Color.black)
+                if entry.showUSD {
+                    let data = currencyData?[1]
+                    SmallWidgetView(entry: entry, currencyData: data)
+                        .widgetBackground(Color.black)
+                } else if entry.showGBP {
+                    let data = currencyData?[0]
+                    SmallWidgetView(entry: entry, currencyData: data)
+                        .widgetBackground(Color.black)
+                } else if entry.showEUR {
+                    let data = currencyData?[2]
+                    SmallWidgetView(entry: entry, currencyData: data)
+                        .widgetBackground(Color.black)
+                }
         case .systemMedium:
             MediumWidgetView(entry: entry)
                 .widgetBackground(Color.black)
@@ -26,3 +38,6 @@ struct CurrencyWidgetEntryView : View {
             
     }
 }
+
+
+

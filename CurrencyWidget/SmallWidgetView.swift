@@ -10,6 +10,7 @@ import WidgetKit
 
 struct SmallWidgetView: View {
     var entry: SimpleEntry
+    var currencyData: CurrencyData?
     var body: some View {
         
         ZStack {
@@ -18,12 +19,12 @@ struct SmallWidgetView: View {
             
             VStack(spacing: 20) {
                 HStack {
-                    Image("iconUSA1")
+                    Image(currencyData?.targetCurrencyIsoCode ?? "")
                         .resizable()
                         .aspectRatio(contentMode: .fill)
                         .frame(width: 25, height: 25)
                         .clipShape(Circle())
-                    Text(entry.currencyData?[1].targetCurrencyIsoCode ?? "")
+                    Text(currencyData?.targetCurrencyIsoCode ?? "")
                         .font(.headline)
                         .fontWeight(.bold)
                         .foregroundColor(.white)
@@ -35,24 +36,28 @@ struct SmallWidgetView: View {
                         Text("Продажа")
                             .font(.system(size: 12))
                             .foregroundColor(.white)
+                            .frame(width: 55, alignment: .leading)
                         
                         Spacer()
                         
-                        Text((entry.currencyData?[1].rateSale.dropLast(2) ?? "") + " ₸")
+                        Text((currencyData?.rateSale.dropLast(2) ?? "") + " ₸")
                             .font(.headline)
                             .fontWeight(.bold)
                             .foregroundColor(.white)
+                            .frame(width: 80, alignment: .leading)
                     }
                     HStack {
                         Text("Покупка")
                             .font(.system(size: 12))
                             .foregroundColor(.white)
+                            .frame(width: 55, alignment: .leading)
                         
                         Spacer()
                         
-                        Text((entry.currencyData?[1].ratePurchase.dropLast(2) ?? "") + " ₸")
+                        Text((currencyData?.ratePurchase.dropLast(2) ?? "") + " ₸")
                             .fontWeight(.bold)
                             .foregroundColor(.white)
+                            .frame(width: 80, alignment: .leading)
                     }
                 }
                 
@@ -82,8 +87,9 @@ struct SmallWidgetView: View {
 
 struct SmallWidgetView_Previews: PreviewProvider {
     static var previews: some View {
-        SmallWidgetView(entry: SimpleEntry(date: Date(), configuration: ConfigurationIntent(), currencyData: nil))
+        SmallWidgetView(entry: SimpleEntry(date: Date(), showUSD: true, showGBP: false, showEUR: false, configuration: ConfigurationIntent(), currencyData: nil))
             .previewContext(WidgetPreviewContext(family: .systemSmall))
+            .widgetBackground(Color.clear)
     }
 }
 

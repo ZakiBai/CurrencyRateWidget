@@ -11,7 +11,7 @@ import WidgetKit
 struct MediumWidgetView: View {
     var entry: SimpleEntry
     var titles = ["Валюта", "Продажа", "Покупка"]
-    var flags = ["iconGBP1", "iconUSA1", "iconEuro1"]
+    var flags = ["GBP", "USD", "EUR"]
     
     var body: some View {
         let currencyData = entry.currencyData ?? []
@@ -92,7 +92,9 @@ struct MediumWidgetView: View {
 
 struct CurrencyWidgetMediumView_Previews: PreviewProvider {
     static var previews: some View {
-        MediumWidgetView(entry: SimpleEntry(date: Date(), configuration: ConfigurationIntent(), currencyData: nil))
+        MediumWidgetView(entry: SimpleEntry(date: Date(), showUSD: true, showGBP: false, showEUR: false, configuration: ConfigurationIntent(), currencyData: nil))
             .previewContext(WidgetPreviewContext(family: .systemMedium))
+            .widgetBackground(Color.clear)
+            
     }
 }
