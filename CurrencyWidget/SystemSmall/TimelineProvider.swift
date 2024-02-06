@@ -8,9 +8,9 @@ import Combine
 import WidgetKit
 import Intents
 
-class Provider: IntentTimelineProvider {
+class CurrencyProvider: IntentTimelineProvider {
     func placeholder(in context: Context) -> SimpleEntry {
-        SimpleEntry(date: Date(), showUSD: true, showGBP: false, showEUR: false, configuration: ConfigurationIntent(), currencyData: nil)
+        SimpleEntry(date: Date(), configuration: ConfigurationIntent(), currencyData: nil)
     }
 
     func getSnapshot(for configuration: ConfigurationIntent, in context: Context, completion: @escaping (SimpleEntry) -> ()) {
@@ -31,7 +31,7 @@ class Provider: IntentTimelineProvider {
                 // Handle error, possibly by providing a default or fallback entry
                 print("Error fetching currency data:", error)
             } receiveValue: { currencyData in
-                let entry = SimpleEntry(date: date, showUSD: true, showGBP: false, showEUR: false, configuration: configuration, currencyData: currencyData)
+                let entry = SimpleEntry(date: date, configuration: configuration, currencyData: currencyData)
                 completion(entry)
             }
             .store(in: &cancellables)
@@ -46,7 +46,7 @@ class Provider: IntentTimelineProvider {
                 print("Error fetching currency data:", error)
             } receiveValue: { currencyData in
                 
-                let entry = SimpleEntry(date: date, showUSD: configuration.showUSD?.boolValue ?? true, showGBP: configuration.showGBP?.boolValue ?? false, showEUR: configuration.showEUR?.boolValue ?? false, configuration: configuration, currencyData: currencyData)
+                let entry = SimpleEntry(date: date, configuration: configuration, currencyData: currencyData)
                 guard let nextUpdateDate = Calendar.current.date(byAdding: .minute, value: 5, to: date) else {
                     completion(Timeline(entries: [], policy: .never))
                     return

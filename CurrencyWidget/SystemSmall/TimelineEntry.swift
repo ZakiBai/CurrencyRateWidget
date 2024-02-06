@@ -9,9 +9,6 @@ import WidgetKit
 
 struct SimpleEntry: TimelineEntry {
     let date: Date
-    let showUSD: Bool
-    let showGBP: Bool
-    let showEUR: Bool
     let configuration: ConfigurationIntent
     let currencyData: [CurrencyData]?
 }

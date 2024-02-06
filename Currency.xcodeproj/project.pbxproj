@@ -31,6 +31,11 @@
 		35676D9E2B4D14FD003BB33E /* CurrencyViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35676D9C2B4D14FD003BB33E /* CurrencyViewModel.swift */; };
 		35676DA32B4D6124003BB33E /* MediumWidgetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35676DA22B4D6124003BB33E /* MediumWidgetView.swift */; };
 		35676DA72B4D6A87003BB33E /* SmallWidgetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35676DA62B4D6A87003BB33E /* SmallWidgetView.swift */; };
+		35E349072B72071A0067FE4C /* Intents.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35E349062B72071A0067FE4C /* Intents.framework */; };
+		35E3490A2B72071B0067FE4C /* IntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35E349092B72071B0067FE4C /* IntentHandler.swift */; };
+		35E3490E2B72071B0067FE4C /* CurrencyRateIntents.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 35E349052B72071A0067FE4C /* CurrencyRateIntents.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		35E349122B7207440067FE4C /* IntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35E349092B72071B0067FE4C /* IntentHandler.swift */; };
+		35E349132B7207570067FE4C /* CurrencyWidget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 35676D832B495B8A003BB33E /* CurrencyWidget.intentdefinition */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +45,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = 35676D752B495B8A003BB33E;
 			remoteInfo = CurrencyWidgetExtension;
+		};
+		35E3490C2B72071B0067FE4C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 35676D592B495B48003BB33E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 35E349042B72071A0067FE4C;
+			remoteInfo = CurrencyRateIntents;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -51,6 +63,7 @@
 			dstSubfolderSpec = 13;
 			files = (
 				35676D8B2B495B8D003BB33E /* CurrencyWidgetExtension.appex in Embed Foundation Extensions */,
+				35E3490E2B72071B0067FE4C /* CurrencyRateIntents.appex in Embed Foundation Extensions */,
 			);
 			name = "Embed Foundation Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -81,6 +94,10 @@
 		35676DA22B4D6124003BB33E /* MediumWidgetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediumWidgetView.swift; sourceTree = "<group>"; };
 		35676DA62B4D6A87003BB33E /* SmallWidgetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmallWidgetView.swift; sourceTree = "<group>"; };
 		35E07A2E2B67C25F00A79EC2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		35E349052B72071A0067FE4C /* CurrencyRateIntents.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = CurrencyRateIntents.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		35E349062B72071A0067FE4C /* Intents.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Intents.framework; path = System/Library/Frameworks/Intents.framework; sourceTree = SDKROOT; };
+		35E349092B72071B0067FE4C /* IntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentHandler.swift; sourceTree = "<group>"; };
+		35E3490B2B72071B0067FE4C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +117,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		35E349022B72071A0067FE4C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				35E349072B72071A0067FE4C /* Intents.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -108,6 +133,7 @@
 			children = (
 				35676D632B495B48003BB33E /* Currency */,
 				35676D7C2B495B8A003BB33E /* CurrencyWidget */,
+				35E349082B72071B0067FE4C /* CurrencyRateIntents */,
 				35676D772B495B8A003BB33E /* Frameworks */,
 				35676D622B495B48003BB33E /* Products */,
 			);
@@ -118,6 +144,7 @@
 			children = (
 				35676D612B495B48003BB33E /* Currency.app */,
 				35676D762B495B8A003BB33E /* CurrencyWidgetExtension.appex */,
+				35E349052B72071A0067FE4C /* CurrencyRateIntents.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -148,6 +175,7 @@
 			children = (
 				35676D782B495B8A003BB33E /* WidgetKit.framework */,
 				35676D7A2B495B8A003BB33E /* SwiftUI.framework */,
+				35E349062B72071A0067FE4C /* Intents.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -196,6 +224,15 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		35E349082B72071B0067FE4C /* CurrencyRateIntents */ = {
+			isa = PBXGroup;
+			children = (
+				35E349092B72071B0067FE4C /* IntentHandler.swift */,
+				35E3490B2B72071B0067FE4C /* Info.plist */,
+			);
+			path = CurrencyRateIntents;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -212,6 +249,7 @@
 			);
 			dependencies = (
 				35676D8A2B495B8D003BB33E /* PBXTargetDependency */,
+				35E3490D2B72071B0067FE4C /* PBXTargetDependency */,
 			);
 			name = Currency;
 			productName = Currency;
@@ -235,6 +273,23 @@
 			productReference = 35676D762B495B8A003BB33E /* CurrencyWidgetExtension.appex */;
 			productType = "com.apple.product-type.app-extension";
 		};
+		35E349042B72071A0067FE4C /* CurrencyRateIntents */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 35E3490F2B72071B0067FE4C /* Build configuration list for PBXNativeTarget "CurrencyRateIntents" */;
+			buildPhases = (
+				35E349012B72071A0067FE4C /* Sources */,
+				35E349022B72071A0067FE4C /* Frameworks */,
+				35E349032B72071A0067FE4C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CurrencyRateIntents;
+			productName = CurrencyRateIntents;
+			productReference = 35E349052B72071A0067FE4C /* CurrencyRateIntents.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -242,7 +297,7 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1420;
+				LastSwiftUpdateCheck = 1520;
 				LastUpgradeCheck = 1420;
 				TargetAttributes = {
 					35676D602B495B48003BB33E = {
@@ -250,6 +305,9 @@
 					};
 					35676D752B495B8A003BB33E = {
 						CreatedOnToolsVersion = 14.2;
+					};
+					35E349042B72071A0067FE4C = {
+						CreatedOnToolsVersion = 15.2;
 					};
 				};
 			};
@@ -268,6 +326,7 @@
 			targets = (
 				35676D602B495B48003BB33E /* Currency */,
 				35676D752B495B8A003BB33E /* CurrencyWidgetExtension */,
+				35E349042B72071A0067FE4C /* CurrencyRateIntents */,
 			);
 		};
 /* End PBXProject section */
@@ -287,6 +346,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				35676D852B495B8D003BB33E /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		35E349032B72071A0067FE4C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -316,12 +382,22 @@
 				35676D7E2B495B8A003BB33E /* CurrencyWidgetBundle.swift in Sources */,
 				35676DA72B4D6A87003BB33E /* SmallWidgetView.swift in Sources */,
 				35676D952B4D09A3003BB33E /* CurrencyWidgetView.swift in Sources */,
+				35E349122B7207440067FE4C /* IntentHandler.swift in Sources */,
 				35676D822B495B8A003BB33E /* CurrencyWidget.swift in Sources */,
 				35676D982B4D0B86003BB33E /* CurrencyService.swift in Sources */,
 				35676DA32B4D6124003BB33E /* MediumWidgetView.swift in Sources */,
 				35676D932B4D0969003BB33E /* TimelineEntry.swift in Sources */,
 				35676D872B495B8D003BB33E /* CurrencyWidget.intentdefinition in Sources */,
 				35676D912B4D091B003BB33E /* TimelineProvider.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		35E349012B72071A0067FE4C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				35E3490A2B72071B0067FE4C /* IntentHandler.swift in Sources */,
+				35E349132B7207570067FE4C /* CurrencyWidget.intentdefinition in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -332,6 +408,11 @@
 			isa = PBXTargetDependency;
 			target = 35676D752B495B8A003BB33E /* CurrencyWidgetExtension */;
 			targetProxy = 35676D892B495B8D003BB33E /* PBXContainerItemProxy */;
+		};
+		35E3490D2B72071B0067FE4C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 35E349042B72071A0067FE4C /* CurrencyRateIntents */;
+			targetProxy = 35E3490C2B72071B0067FE4C /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -566,6 +647,67 @@
 			};
 			name = Release;
 		};
+		35E349102B72071B0067FE4C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = XZW4VA4NWF;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CurrencyRateIntents/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = CurrencyRateIntents;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = kz.menzhanovTeam.Currency.CurrencyRateIntents;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		35E349112B72071B0067FE4C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = XZW4VA4NWF;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CurrencyRateIntents/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = CurrencyRateIntents;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = kz.menzhanovTeam.Currency.CurrencyRateIntents;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -592,6 +734,15 @@
 			buildConfigurations = (
 				35676D8D2B495B8D003BB33E /* Debug */,
 				35676D8E2B495B8D003BB33E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		35E3490F2B72071B0067FE4C /* Build configuration list for PBXNativeTarget "CurrencyRateIntents" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				35E349102B72071B0067FE4C /* Debug */,
+				35E349112B72071B0067FE4C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

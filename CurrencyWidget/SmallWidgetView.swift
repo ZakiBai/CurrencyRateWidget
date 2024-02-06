@@ -87,7 +87,7 @@ struct SmallWidgetView: View {
 
 struct SmallWidgetView_Previews: PreviewProvider {
     static var previews: some View {
-        SmallWidgetView(entry: SimpleEntry(date: Date(), showUSD: true, showGBP: false, showEUR: false, configuration: ConfigurationIntent(), currencyData: nil))
+        SmallWidgetView(entry: SimpleEntry(date: Date(), configuration: ConfigurationIntent(), currencyData: nil))
             .previewContext(WidgetPreviewContext(family: .systemSmall))
             .widgetBackground(Color.clear)
     }

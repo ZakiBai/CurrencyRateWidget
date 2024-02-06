@@ -13,17 +13,14 @@ struct CurrencyWidget: Widget {
     let kind: String = "CurrencyWidget"
 
     var body: some WidgetConfiguration {
-        IntentConfiguration(kind: kind, intent: ConfigurationIntent.self, provider: Provider()) { entry in
+        IntentConfiguration(kind: kind, intent: ConfigurationIntent.self, provider: CurrencyProvider()) { entry in
             CurrencyWidgetEntryView(entry: entry)
         }
         .configurationDisplayName("Currency")
         .description("Track currency exchange rates in real time")
-        .supportedFamilies([.systemSmall, .systemMedium])
+        .supportedFamilies([.systemSmall])
         .contentMarginsDisabledIfAvailable()
         .containerBackgroundRemovable(true)
-        
-    
-        
     }
 }
 

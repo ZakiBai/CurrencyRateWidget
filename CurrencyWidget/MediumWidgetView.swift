@@ -92,7 +92,7 @@ struct MediumWidgetView: View {
 
 struct CurrencyWidgetMediumView_Previews: PreviewProvider {
     static var previews: some View {
-        MediumWidgetView(entry: SimpleEntry(date: Date(), showUSD: true, showGBP: false, showEUR: false, configuration: ConfigurationIntent(), currencyData: nil))
+        MediumWidgetView(entry: SimpleEntry(date: Date(), configuration: ConfigurationIntent(), currencyData: nil))
             .previewContext(WidgetPreviewContext(family: .systemMedium))
             .widgetBackground(Color.clear)
             
