@@ -17,8 +17,6 @@
 		35676D802B495B8A003BB33E /* CurrencyWidgetLiveActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35676D7F2B495B8A003BB33E /* CurrencyWidgetLiveActivity.swift */; };
 		35676D822B495B8A003BB33E /* CurrencyWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35676D812B495B8A003BB33E /* CurrencyWidget.swift */; };
 		35676D852B495B8D003BB33E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 35676D842B495B8D003BB33E /* Assets.xcassets */; };
-		35676D872B495B8D003BB33E /* CurrencyWidget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 35676D832B495B8A003BB33E /* CurrencyWidget.intentdefinition */; };
-		35676D882B495B8D003BB33E /* CurrencyWidget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 35676D832B495B8A003BB33E /* CurrencyWidget.intentdefinition */; };
 		35676D8B2B495B8D003BB33E /* CurrencyWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 35676D762B495B8A003BB33E /* CurrencyWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		35676D912B4D091B003BB33E /* TimelineProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35676D902B4D091B003BB33E /* TimelineProvider.swift */; };
 		35676D932B4D0969003BB33E /* TimelineEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35676D922B4D0969003BB33E /* TimelineEntry.swift */; };
@@ -300,7 +298,6 @@
 				35676D972B4D0B86003BB33E /* CurrencyService.swift in Sources */,
 				35676D9D2B4D14FD003BB33E /* CurrencyViewModel.swift in Sources */,
 				35676D672B495B48003BB33E /* ContentView.swift in Sources */,
-				35676D882B495B8D003BB33E /* CurrencyWidget.intentdefinition in Sources */,
 				35676D9A2B4D0BB5003BB33E /* CurrencyData.swift in Sources */,
 				35676D652B495B48003BB33E /* CurrencyApp.swift in Sources */,
 			);
@@ -320,7 +317,6 @@
 				35676D982B4D0B86003BB33E /* CurrencyService.swift in Sources */,
 				35676DA32B4D6124003BB33E /* MediumWidgetView.swift in Sources */,
 				35676D932B4D0969003BB33E /* TimelineEntry.swift in Sources */,
-				35676D872B495B8D003BB33E /* CurrencyWidget.intentdefinition in Sources */,
 				35676D912B4D091B003BB33E /* TimelineProvider.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
