@@ -48,30 +48,24 @@ struct CurrencyWidgetGBP: Widget {
         })
         .configurationDisplayName("Currency")
         .description("Track GBP currency exchange rates in real time")
-        .supportedFamilies([.systemSmall, .systemMedium])
+        .supportedFamilies([.systemSmall])
         .contentMarginsDisabledIfAvailable()
         .containerBackgroundRemovable(true)
     }
 }
 
+struct CurrencyWidgetALL: Widget {
+    let kind: String = "CurrencyWidgetALL"
 
-
-@available(iOSApplicationExtension 17.0, *)
-struct CurrencyWidget_Previews: PreviewProvider {
-    static var previews: some View {
-        Group {
-//            CurrencyWidgetEntryView(entry: SimpleEntry(date: Date(), currencyData: nil), currencyType: .EUR)
-//                .previewContext(WidgetPreviewContext(family: .systemSmall))
-//                .containerBackground(for: .widget) {
-//                    Color.black
-//                }
-
-//            CurrencyWidgetEntryView(entry: SimpleEntry(date: Date(), currencyData: nil))
-//                .previewContext(WidgetPreviewContext(family: .systemMedium))
-//                .containerBackground(for: .widget) {
-//                    Color.black
-//                }
- 
-        }
+    var body: some WidgetConfiguration {
+        StaticConfiguration(kind: kind, provider: Provider(), content: { entry in
+            CurrencyWidgetEntryView(entry: entry, currencyType: .ALL)
+        })
+        .configurationDisplayName("Currency")
+        .description("Track Currencies exchange rates in real time")
+        .supportedFamilies([.systemMedium])
+        .contentMarginsDisabledIfAvailable()
+        .containerBackgroundRemovable(true)
     }
 }
+

@@ -14,6 +14,7 @@ struct CurrencyWidgetBundle: WidgetBundle {
         CurrencyWidgetUSD()
         CurrencyWidgetEUR()
         CurrencyWidgetGBP()
+        CurrencyWidgetALL()
         CurrencyWidgetLiveActivity()
     }
 }

@@ -155,27 +155,27 @@
 			children = (
 				35676D7D2B495B8A003BB33E /* CurrencyWidgetBundle.swift */,
 				35676D7F2B495B8A003BB33E /* CurrencyWidgetLiveActivity.swift */,
+				35676DA62B4D6A87003BB33E /* SmallWidgetView.swift */,
+				35676DA22B4D6124003BB33E /* MediumWidgetView.swift */,
 				35676DA02B4D5BC1003BB33E /* Network */,
 				35676DA12B4D5BC8003BB33E /* Model */,
-				35676D9F2B4D5B8A003BB33E /* SystemSmall */,
+				35676D9F2B4D5B8A003BB33E /* WidgetParameters */,
 				35676D832B495B8A003BB33E /* CurrencyWidget.intentdefinition */,
 				35676D842B495B8D003BB33E /* Assets.xcassets */,
 				35676D862B495B8D003BB33E /* Info.plist */,
-				35676DA22B4D6124003BB33E /* MediumWidgetView.swift */,
-				35676DA62B4D6A87003BB33E /* SmallWidgetView.swift */,
 			);
 			path = CurrencyWidget;
 			sourceTree = "<group>";
 		};
-		35676D9F2B4D5B8A003BB33E /* SystemSmall */ = {
+		35676D9F2B4D5B8A003BB33E /* WidgetParameters */ = {
 			isa = PBXGroup;
 			children = (
 				35676D812B495B8A003BB33E /* CurrencyWidget.swift */,
+				35676D942B4D09A3003BB33E /* CurrencyWidgetView.swift */,
 				35676D902B4D091B003BB33E /* TimelineProvider.swift */,
 				35676D922B4D0969003BB33E /* TimelineEntry.swift */,
-				35676D942B4D09A3003BB33E /* CurrencyWidgetView.swift */,
 			);
-			path = SystemSmall;
+			path = WidgetParameters;
 			sourceTree = "<group>";
 		};
 		35676DA02B4D5BC1003BB33E /* Network */ = {
