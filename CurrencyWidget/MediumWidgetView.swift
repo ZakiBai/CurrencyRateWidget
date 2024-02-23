@@ -17,10 +17,11 @@ struct MediumWidgetView: View {
         let currencyData = entry.currencyData ?? []
         ZStack {
             ContainerRelativeShape()
-                .fill(Color(red: 83/255, green: 104/255, blue: 114/255))
+//                .fill(Color(red: 83/255, green: 104/255, blue: 114/255))
+                .fill(Color(red: 48/255, green: 50/255, blue: 63/255))
 
             VStack(alignment: .leading, spacing: 8) {
-                HStack(spacing: 65) {
+                HStack(spacing: 75) {
                     ForEach(titles, id: \.self) { title in
                         Text(title)
                             .font(.system(size: 12))
@@ -30,7 +31,7 @@ struct MediumWidgetView: View {
 
                 ForEach(Array(currencyData.prefix(3).enumerated()), id: \.1.id) { (index, data) in
 
-                        HStack(spacing: 60) {
+                        HStack(spacing: 70) {
                         HStack {
                             Image(flags[index % flags.count])
                                 .resizable()

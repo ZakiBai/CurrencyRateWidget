@@ -15,7 +15,11 @@ struct SmallWidgetView: View {
         
         ZStack {
             ContainerRelativeShape()
-                .fill(Color(red: 83/255, green: 104/255, blue: 114/255))
+//                .fill(Color(red: 83/255, green: 104/255, blue: 114/255))
+                .fill(Color(red: 48/255, green: 50/255, blue: 63/255)) //Logo
+//                .fill(Color(red: 28/255, green: 28/255, blue: 30/255)) //Light black
+//                .fill(Color(.black))
+//                .fill(Color(.white))
             
             VStack(spacing: 20) {
                 HStack {
@@ -44,7 +48,7 @@ struct SmallWidgetView: View {
                             .font(.headline)
                             .fontWeight(.bold)
                             .foregroundColor(.white)
-                            .frame(width: 80, alignment: .leading)
+                            .frame(width: 85, alignment: .leading)
                     }
                     HStack {
                         Text("Покупка")
@@ -57,7 +61,7 @@ struct SmallWidgetView: View {
                         Text((currencyData?.ratePurchase.dropLast(2) ?? "") + " ₸")
                             .fontWeight(.bold)
                             .foregroundColor(.white)
-                            .frame(width: 80, alignment: .leading)
+                            .frame(width: 85, alignment: .leading)
                     }
                 }
                 
